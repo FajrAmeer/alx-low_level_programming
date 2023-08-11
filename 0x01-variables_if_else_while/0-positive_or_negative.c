@@ -1,15 +1,27 @@
-#include <stdio.h>
+#include <time.h>
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - generate random number to detect -ve or +ve
+ *
+ * Return: Always (0)
+ *
  */
-
 int main(void)
 {
-	int a;
+	int n;
 
-	for (a = 0; a < 10; a++)
-		printf("%d", a);
-	putchar('\n');
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is postive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
 	return (0);
 }
