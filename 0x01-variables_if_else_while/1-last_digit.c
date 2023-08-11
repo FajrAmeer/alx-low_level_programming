@@ -1,15 +1,18 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * Description: alphabet
+ * Return: Always 0
  */
-
 int main(void)
 {
-        int a;
+	int n = 97;
 
-        for (a = 0; a < 10; a++)
-                printf("%d", a);
-        putchar('\n');
-        return (0);
+	while (n <= 122)
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
+	return (0);
 }
