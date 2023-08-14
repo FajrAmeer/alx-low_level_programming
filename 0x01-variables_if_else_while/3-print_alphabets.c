@@ -2,23 +2,21 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - alphabit exept q wa e
+ * main - Entry point
  *
  * Return: always (0)
  *
  */
 int main(void)
 {
-	char alphabet = 'a';
+	char c;
 
-	while (alphabet <= 'z')
-	{
-		if (alphabet != 'q' && alphabet != 'e')
-		{
-			putchar(alphabet);
+	c = 'a';
+	while
+		(c <= 'z') {
+			putchar(c);
+			c++;
 		}
-		alphabet++;
-	}
 	putchar('\n');
 	return (0);
 }
