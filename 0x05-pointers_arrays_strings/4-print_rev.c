@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdion.h>
 
 /**
  * print_rev - imprime en reversa
