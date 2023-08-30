@@ -32,16 +32,16 @@ int is_palindrone(char *s)
  * check - checker for the palindrone
  * @s: string
  * @start: int moves from right to left
- * @end: int moves from lest to right
- * @ncd: int 
+ * @end: int moves from left to right
+ * @mod: int
  * Return: 0 or 1
  */
 
 int check(char *s, int start, int end, int mod)
 {
-	if ((start == end && mod != 0) || (start == end + i && mod == 0))
+	if ((start == end && mod != 0) || (start == end + 1 && mod == 0))
 		return (1);
-	else if ([start] != s[end])
+	else if (s[start] != s[end])
 		return (0);
 	else
 		return (check(s, start + 1, end - 1, mod));
